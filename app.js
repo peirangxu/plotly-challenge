@@ -55,7 +55,7 @@ function BubbleData(otu){
 // Init function
 function init(){
     // Import local json file
-    d3.json("../data/samples.json").then(function(data){
+    d3.json("data/samples.json").then(function(data){
         console.log(data);
         
         // Append test subject ID No.
@@ -91,7 +91,7 @@ d3.selectAll("#selDataset").on("change",updatePlotly);
 function updatePlotly(){
 
     //Import local json file
-    d3.json("../data/samples.json").then(function(data){
+    d3.json("data/samples.json").then(function(data){
 
         // Define variables and extract sample data selected
         var dropdownMenu = d3.select("#selDataset");
